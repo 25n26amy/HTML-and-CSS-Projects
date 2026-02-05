@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>GP's Auto Sales</title>
 
-    <!-- Basic CSS (you will expand this later) -->
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/one_page_website.css">
+
+    <!-- Page styling -->
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #0b2a4a; /* blue */
+            background-color: #0b2a4a;
             color: white;
         }
 
@@ -20,7 +23,7 @@
         }
 
         nav a {
-            color: #ffd400; /* yellow */
+            color: #ffd400;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
@@ -43,12 +46,7 @@
             width: 300px;
             border-radius: 10px;
             margin-top: 15px;
-        }
-
-        form input, form textarea {
-            width: 250px;
-            padding: 8px;
-            margin: 5px 0;
+            cursor: pointer;
         }
 
         footer {
@@ -62,7 +60,6 @@
 
 <body>
 
-    <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
         <a href="#inventory">Inventory</a>
@@ -70,7 +67,6 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Home Section -->
     <section id="home">
         <h1>GP's Auto Sales</h1>
         <p>
@@ -79,7 +75,6 @@
         </p>
     </section>
 
-    <!-- Inventory Section -->
     <section id="inventory">
         <h2>Cars for Sale</h2>
 
@@ -90,7 +85,7 @@
                 • No Accidents<br>
                 • Price: $70,000
             </p>
-            <img src="rrsport.avif" alt="Range Rover Sport">
+            <img src="images/rrsport.avif" class="lightbox-img" alt="Range Rover Sport">
         </div>
 
         <div class="car">
@@ -100,14 +95,12 @@
                 • High Performance Luxury SUV<br>
                 • Price: $245,000
             </p>
-            <img src="escalade.avif" alt="Cadillac Escalade V">
+            <img src="images/escalade.avif" class="lightbox-img" alt="Cadillac Escalade V">
         </div>
     </section>
 
-    <!-- Video Section -->
     <section id="video">
         <h2>Watch Our Inventory</h2>
-
         <iframe
             width="560"
             height="315"
@@ -118,28 +111,27 @@
         </iframe>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact GP</h2>
 
         <p>
-             Phone: 780-111-1122<br>
-             Email: gpsellscars@gmail.com
+            Phone: 780-111-1122<br>
+            Email: gpsellscars@gmail.com
         </p>
 
         <form>
-            <input type="text" name="name" placeholder="Your Name"><br>
-            <input type="email" name="email" placeholder="Your Email"><br>
-            <textarea name="message" placeholder="Your Message"></textarea><br>
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Your Email"><br>
+            <textarea placeholder="Your Message"></textarea><br>
             <input type="submit" value="Send Message">
         </form>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 GP's Auto Sales | Luxury Vehicles</p>
     </footer>
 
+    <!-- JS (must be last) -->
+    <script src="JS/one_page_website.js"></script>
 </body>
 </html>
-
